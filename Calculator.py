@@ -22,6 +22,7 @@ class Calculator:
 		self.setting_nums_and_signs()
 		self.sum_shower()
 		self.main_entry.insert(END, ("=" + str(self.sum)))
+		self.main_entry.xview("end")
 		self.sum = 0
 	
 	def setting_nums_and_signs(self):
